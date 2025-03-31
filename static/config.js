@@ -1,3 +1,3 @@
 const CONFIG = {
-  API_URL: "http://127.0.0.1:5000/predict"
+  API_URL: "https://comp4949a2.onrender.com/predict"
 };
