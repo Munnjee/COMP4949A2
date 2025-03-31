@@ -1,5 +1,6 @@
 # Core Web Framework
 Flask>=3.0.0
+flask-cors>=4.0.0
 
 # ML and Text Processing
 scikit-learn>=1.4.1
