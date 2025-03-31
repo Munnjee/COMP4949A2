@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NSFW - Is this safe for work… or a little too spicy? 🌶️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>NSFW Checker</h1>
+      <p class="tagline">Is this safe for work… or a little too spicy? 🌶️</p>
+      <textarea
+        id="input"
+        rows="4"
+        placeholder="Type your roast here..."
+      ></textarea
+      ><br />
+      <button onclick="checkToxicity()">Submit</button>
+      <p id="result">🤔 Waiting for your input...</p>
+      <div id="bar-container">
+        <div id="toxicity-bar"></div>
+      </div>
+    </div>
+
+    <!-- Load config -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

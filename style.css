@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+}
+
+/* Container styling */
+.container {
+  background: #1e293b;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animated header */
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+p.tagline {
+  color: #cbd5e1;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Input area */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Button with neon glow */
+button {
+  background-color: #6366f1;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #6366f1;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #7c3aed;
+  box-shadow: 0 0 20px #7c3aed;
+}
+
+/* Result formatting */
+.result-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.result-details {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+
+#result {
+  margin-top: 1.5rem;
+  min-height: 2rem;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Score */
+.score {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* Toxicity bar */
+#bar-container {
+  width: 100%;
+  background: #334155;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+#toxicity-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #22c55e, #facc15, #ef4444);
+  transition: width 0.4s ease;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
