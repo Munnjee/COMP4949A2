@@ -79,6 +79,19 @@ Please note that Render may take a few minutes to spin up the service.
 4. Scores above 0.3 are flagged as potentially inappropriate
 5. User-friendly feedback is provided based on the score range
 
+## Model Development
+
+The machine learning model powering this application was developed in the `model.ipynb` Jupyter notebook. The development process includes:
+
+- Data preprocessing and cleaning of toxic comment datasets
+- Feature engineering using both character-level and word-level vectorization
+- Model selection comparing various algorithms (Logistic Regression, Random Forest, etc.)
+- Hyperparameter tuning for optimal performance
+- Evaluation using precision, recall, and F1 scores
+- Model serialization into the pickle files loaded by the Flask application
+
+For those interested in the data science aspects of this project, the notebook provides detailed documentation of the entire model development process with visualizations and performance metrics.
+
 ## API Endpoints
 
 ### POST /predict
