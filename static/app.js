@@ -58,7 +58,7 @@ async function checkToxicity() {
     } else {
       // Clean responses (score < 0.2)
       const cleanResponses = [
-        `<div class="result-heading">ALL CLEAR: ${scorePercent}%)</div>
+        `<div class="result-heading">ALL CLEAR: ${scorePercent}%</div>
          <div class="result-details">Corporate-approved communication! ✅</div>`,
         `<div class="result-heading">SQUEAKY CLEAN: ${scorePercent}%</div>
          <div class="result-details">Even your boss's boss would approve. 👔</div>`,

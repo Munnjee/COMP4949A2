@@ -1,0 +1,13 @@
+Toxicity Detection Model Details
+===============================
+
+Model Type: Logistic Regression with combined word and character features
+Word features: 10000 features
+Character features: 20000 features
+Decision threshold: 0.3
+ROC AUC score: 0.9038
+
+Model Performance with Different Feature Types:
+- Word-based model AUC: 0.8668
+- Character-based model AUC: 0.9067
+- Combined features model AUC: 0.9038

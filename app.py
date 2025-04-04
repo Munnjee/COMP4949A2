@@ -34,9 +34,9 @@ def predict():
     comment = data.get("text", "")
 
     clean_comment = preprocess_text(comment)
-    char_features = char_vectorizer.transform([clean_comment])
     word_features = word_vectorizer.transform([clean_comment])
-    combined_features = hstack([char_features, word_features])
+    char_features = char_vectorizer.transform([clean_comment])
+    combined_features = hstack([word_features, char_features])
 
     prob = model.predict_proba(combined_features)[0][1]
     prediction = int(prob >= 0.3)
